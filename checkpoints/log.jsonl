@@ -1,0 +1,150 @@
+{"iteration": 1, "buffer": 3575, "policy_loss": 4.9642, "value_loss": 0.5035, "selfplay_s": 6.2, "train_s": 2.3}
+{"iteration": 2, "buffer": 7042, "policy_loss": 4.2328, "value_loss": 0.5059, "selfplay_s": 5.2, "train_s": 2.3}
+{"iteration": 3, "buffer": 10501, "policy_loss": 4.1212, "value_loss": 0.5108, "selfplay_s": 5.7, "train_s": 2.4}
+{"iteration": 4, "buffer": 13999, "policy_loss": 4.0867, "value_loss": 0.4995, "selfplay_s": 6.3, "train_s": 2.8}
+{"iteration": 5, "buffer": 17514, "policy_loss": 4.0499, "value_loss": 0.5011, "selfplay_s": 7.0, "train_s": 2.5, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 48, "draw": 37, "loss": 15}}
+{"iteration": 6, "buffer": 20997, "policy_loss": 4.0375, "value_loss": 0.5013, "selfplay_s": 6.6, "train_s": 2.8}
+{"iteration": 7, "buffer": 24393, "policy_loss": 4.0224, "value_loss": 0.5018, "selfplay_s": 6.0, "train_s": 2.6}
+{"iteration": 8, "buffer": 27864, "policy_loss": 4.0091, "value_loss": 0.4919, "selfplay_s": 6.5, "train_s": 2.8}
+{"iteration": 9, "buffer": 31333, "policy_loss": 3.9926, "value_loss": 0.4951, "selfplay_s": 6.5, "train_s": 2.9}
+{"iteration": 10, "buffer": 34749, "policy_loss": 3.986, "value_loss": 0.494, "selfplay_s": 6.1, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 58, "draw": 36, "loss": 6}}
+{"iteration": 11, "buffer": 38255, "policy_loss": 3.9692, "value_loss": 0.4787, "selfplay_s": 6.2, "train_s": 2.7}
+{"iteration": 12, "buffer": 41789, "policy_loss": 3.9641, "value_loss": 0.4771, "selfplay_s": 6.4, "train_s": 2.8}
+{"iteration": 13, "buffer": 45157, "policy_loss": 3.9506, "value_loss": 0.4786, "selfplay_s": 6.4, "train_s": 2.7}
+{"iteration": 14, "buffer": 48570, "policy_loss": 3.9389, "value_loss": 0.4813, "selfplay_s": 6.2, "train_s": 2.9}
+{"iteration": 15, "buffer": 51999, "policy_loss": 3.9324, "value_loss": 0.4825, "selfplay_s": 6.1, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 60, "draw": 29, "loss": 11}}
+{"iteration": 16, "buffer": 55486, "policy_loss": 3.9242, "value_loss": 0.4808, "selfplay_s": 6.6, "train_s": 2.9}
+{"iteration": 17, "buffer": 58902, "policy_loss": 3.9153, "value_loss": 0.4828, "selfplay_s": 6.0, "train_s": 2.7}
+{"iteration": 18, "buffer": 62411, "policy_loss": 3.9008, "value_loss": 0.4797, "selfplay_s": 6.8, "train_s": 2.8}
+{"iteration": 19, "buffer": 65846, "policy_loss": 3.8995, "value_loss": 0.4873, "selfplay_s": 5.9, "train_s": 2.7}
+{"iteration": 20, "buffer": 69278, "policy_loss": 3.8834, "value_loss": 0.4813, "selfplay_s": 6.8, "train_s": 3.0, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 56, "draw": 29, "loss": 15}}
+{"iteration": 21, "buffer": 72863, "policy_loss": 3.8716, "value_loss": 0.483, "selfplay_s": 6.1, "train_s": 2.9}
+{"iteration": 22, "buffer": 76303, "policy_loss": 3.8685, "value_loss": 0.485, "selfplay_s": 7.1, "train_s": 2.8}
+{"iteration": 23, "buffer": 79746, "policy_loss": 3.8584, "value_loss": 0.4851, "selfplay_s": 6.3, "train_s": 3.1}
+{"iteration": 24, "buffer": 83214, "policy_loss": 3.8484, "value_loss": 0.4854, "selfplay_s": 8.6, "train_s": 3.3}
+{"iteration": 25, "buffer": 86696, "policy_loss": 3.8395, "value_loss": 0.4852, "selfplay_s": 7.1, "train_s": 3.1, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 63, "draw": 29, "loss": 8}}
+{"iteration": 26, "buffer": 90172, "policy_loss": 3.8406, "value_loss": 0.4848, "selfplay_s": 6.1, "train_s": 2.8}
+{"iteration": 27, "buffer": 93636, "policy_loss": 3.8339, "value_loss": 0.4841, "selfplay_s": 6.0, "train_s": 3.3}
+{"iteration": 28, "buffer": 97208, "policy_loss": 3.8261, "value_loss": 0.4859, "selfplay_s": 8.6, "train_s": 154.6}
+{"iteration": 29, "buffer": 100732, "policy_loss": 3.8154, "value_loss": 0.4887, "selfplay_s": 57.3, "train_s": 2.7}
+{"iteration": 30, "buffer": 104214, "policy_loss": 3.8094, "value_loss": 0.4909, "selfplay_s": 46.5, "train_s": 4.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 58, "draw": 29, "loss": 13}}
+{"iteration": 31, "buffer": 107715, "policy_loss": 3.7977, "value_loss": 0.4902, "selfplay_s": 110.9, "train_s": 52.6}
+{"iteration": 32, "buffer": 111139, "policy_loss": 3.795, "value_loss": 0.4891, "selfplay_s": 64.2, "train_s": 2.8}
+{"iteration": 33, "buffer": 114644, "policy_loss": 3.7885, "value_loss": 0.4889, "selfplay_s": 61.6, "train_s": 2.7}
+{"iteration": 34, "buffer": 118181, "policy_loss": 3.7889, "value_loss": 0.4897, "selfplay_s": 33.2, "train_s": 59.2}
+{"iteration": 35, "buffer": 121683, "policy_loss": 3.7841, "value_loss": 0.4859, "selfplay_s": 6.1, "train_s": 54.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 54, "draw": 32, "loss": 14}}
+{"iteration": 36, "buffer": 125238, "policy_loss": 3.7705, "value_loss": 0.4887, "selfplay_s": 109.9, "train_s": 2.7}
+{"iteration": 37, "buffer": 128761, "policy_loss": 3.7727, "value_loss": 0.4881, "selfplay_s": 60.6, "train_s": 54.7}
+{"iteration": 38, "buffer": 132288, "policy_loss": 3.7654, "value_loss": 0.4887, "selfplay_s": 6.1, "train_s": 85.5}
+{"iteration": 39, "buffer": 135854, "policy_loss": 3.76, "value_loss": 0.4872, "selfplay_s": 53.4, "train_s": 2.7}
+{"iteration": 40, "buffer": 139416, "policy_loss": 3.7557, "value_loss": 0.4877, "selfplay_s": 53.5, "train_s": 48.1, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 60, "draw": 30, "loss": 10}}
+{"iteration": 41, "buffer": 143039, "policy_loss": 3.7513, "value_loss": 0.4858, "selfplay_s": 47.3, "train_s": 3.4}
+{"iteration": 42, "buffer": 146597, "policy_loss": 3.7434, "value_loss": 0.4861, "selfplay_s": 84.1, "train_s": 2.9}
+{"iteration": 43, "buffer": 150000, "policy_loss": 3.7373, "value_loss": 0.4848, "selfplay_s": 45.1, "train_s": 52.5}
+{"iteration": 44, "buffer": 150000, "policy_loss": 3.7256, "value_loss": 0.4855, "selfplay_s": 46.5, "train_s": 2.7}
+{"iteration": 45, "buffer": 150000, "policy_loss": 3.713, "value_loss": 0.4857, "selfplay_s": 50.8, "train_s": 3.5, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 63, "draw": 28, "loss": 9}}
+{"iteration": 46, "buffer": 150000, "policy_loss": 3.7107, "value_loss": 0.4856, "selfplay_s": 48.3, "train_s": 2.7}
+{"iteration": 47, "buffer": 150000, "policy_loss": 3.6965, "value_loss": 0.4845, "selfplay_s": 111.6, "train_s": 3.8}
+{"iteration": 48, "buffer": 150000, "policy_loss": 3.6948, "value_loss": 0.484, "selfplay_s": 60.8, "train_s": 47.1}
+{"iteration": 49, "buffer": 150000, "policy_loss": 3.6903, "value_loss": 0.4847, "selfplay_s": 46.4, "train_s": 2.7}
+{"iteration": 50, "buffer": 150000, "policy_loss": 3.6769, "value_loss": 0.4834, "selfplay_s": 59.9, "train_s": 3.6, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 64, "draw": 25, "loss": 11}}
+{"iteration": 51, "buffer": 150000, "policy_loss": 3.6631, "value_loss": 0.4834, "selfplay_s": 54.8, "train_s": 2.8}
+{"iteration": 52, "buffer": 150000, "policy_loss": 3.6645, "value_loss": 0.4838, "selfplay_s": 58.8, "train_s": 52.2}
+{"iteration": 53, "buffer": 150000, "policy_loss": 3.648, "value_loss": 0.486, "selfplay_s": 6.1, "train_s": 44.5}
+{"iteration": 54, "buffer": 150000, "policy_loss": 3.6464, "value_loss": 0.489, "selfplay_s": 62.3, "train_s": 2.7}
+{"iteration": 55, "buffer": 150000, "policy_loss": 3.641, "value_loss": 0.4853, "selfplay_s": 207.2, "train_s": 2.9, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 55, "draw": 34, "loss": 11}}
+{"iteration": 56, "buffer": 150000, "policy_loss": 3.6353, "value_loss": 0.4862, "selfplay_s": 49.9, "train_s": 2.7}
+{"iteration": 57, "buffer": 150000, "policy_loss": 3.6292, "value_loss": 0.4887, "selfplay_s": 53.9, "train_s": 51.4}
+{"iteration": 58, "buffer": 150000, "policy_loss": 3.6217, "value_loss": 0.4842, "selfplay_s": 6.2, "train_s": 138.6}
+{"iteration": 59, "buffer": 150000, "policy_loss": 3.6171, "value_loss": 0.486, "selfplay_s": 59.6, "train_s": 2.8}
+{"iteration": 60, "buffer": 150000, "policy_loss": 3.613, "value_loss": 0.4818, "selfplay_s": 105.5, "train_s": 2.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 67, "draw": 23, "loss": 10}}
+{"iteration": 61, "buffer": 150000, "policy_loss": 3.6068, "value_loss": 0.4839, "selfplay_s": 50.7, "train_s": 2.7}
+{"iteration": 62, "buffer": 150000, "policy_loss": 3.6021, "value_loss": 0.4823, "selfplay_s": 59.8, "train_s": 3.6}
+{"iteration": 63, "buffer": 150000, "policy_loss": 3.5991, "value_loss": 0.4848, "selfplay_s": 50.3, "train_s": 48.3}
+{"iteration": 64, "buffer": 150000, "policy_loss": 3.5979, "value_loss": 0.4857, "selfplay_s": 50.8, "train_s": 2.7}
+{"iteration": 65, "buffer": 150000, "policy_loss": 3.5928, "value_loss": 0.4865, "selfplay_s": 93.6, "train_s": 3.3, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 68, "draw": 25, "loss": 7}}
+{"iteration": 66, "buffer": 150000, "policy_loss": 3.5874, "value_loss": 0.4864, "selfplay_s": 44.9, "train_s": 2.7}
+{"iteration": 67, "buffer": 150000, "policy_loss": 3.5805, "value_loss": 0.4858, "selfplay_s": 30.9, "train_s": 3.6}
+{"iteration": 68, "buffer": 150000, "policy_loss": 3.5821, "value_loss": 0.4901, "selfplay_s": 54.4, "train_s": 46.1}
+{"iteration": 69, "buffer": 150000, "policy_loss": 3.5721, "value_loss": 0.4894, "selfplay_s": 53.4, "train_s": 2.7}
+{"iteration": 70, "buffer": 150000, "policy_loss": 3.5719, "value_loss": 0.4855, "selfplay_s": 47.0, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 70, "draw": 26, "loss": 4}}
+{"iteration": 71, "buffer": 150000, "policy_loss": 3.5711, "value_loss": 0.4855, "selfplay_s": 45.4, "train_s": 2.7}
+{"iteration": 72, "buffer": 150000, "policy_loss": 3.5622, "value_loss": 0.4844, "selfplay_s": 52.5, "train_s": 3.4}
+{"iteration": 73, "buffer": 150000, "policy_loss": 3.5621, "value_loss": 0.4853, "selfplay_s": 55.3, "train_s": 2.8}
+{"iteration": 74, "buffer": 150000, "policy_loss": 3.5579, "value_loss": 0.4868, "selfplay_s": 49.6, "train_s": 46.6}
+{"iteration": 75, "buffer": 150000, "policy_loss": 3.55, "value_loss": 0.4861, "selfplay_s": 46.3, "train_s": 2.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 63, "draw": 27, "loss": 10}}
+{"iteration": 76, "buffer": 150000, "policy_loss": 3.5586, "value_loss": 0.4856, "selfplay_s": 49.9, "train_s": 5.5}
+{"iteration": 77, "buffer": 150000, "policy_loss": 3.5476, "value_loss": 0.4842, "selfplay_s": 105.9, "train_s": 44.8}
+{"iteration": 78, "buffer": 150000, "policy_loss": 3.5464, "value_loss": 0.485, "selfplay_s": 50.0, "train_s": 2.8}
+{"iteration": 79, "buffer": 150000, "policy_loss": 3.5473, "value_loss": 0.4846, "selfplay_s": 58.3, "train_s": 50.8}
+{"iteration": 80, "buffer": 150000, "policy_loss": 3.5427, "value_loss": 0.4854, "selfplay_s": 6.5, "train_s": 57.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 56, "draw": 25, "loss": 19}}
+{"iteration": 81, "buffer": 150000, "policy_loss": 3.5449, "value_loss": 0.4856, "selfplay_s": 58.1, "train_s": 3.0}
+{"iteration": 82, "buffer": 150000, "policy_loss": 3.5388, "value_loss": 0.484, "selfplay_s": 49.2, "train_s": 45.2}
+{"iteration": 83, "buffer": 150000, "policy_loss": 3.5328, "value_loss": 0.4851, "selfplay_s": 45.4, "train_s": 2.7}
+{"iteration": 84, "buffer": 150000, "policy_loss": 3.5355, "value_loss": 0.4872, "selfplay_s": 61.5, "train_s": 3.8}
+{"iteration": 85, "buffer": 150000, "policy_loss": 3.5341, "value_loss": 0.4889, "selfplay_s": 45.2, "train_s": 46.9, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 66, "draw": 28, "loss": 6}}
+{"iteration": 86, "buffer": 150000, "policy_loss": 3.5321, "value_loss": 0.4895, "selfplay_s": 104.1, "train_s": 2.9}
+{"iteration": 87, "buffer": 150000, "policy_loss": 3.5338, "value_loss": 0.4899, "selfplay_s": 52.7, "train_s": 53.6}
+{"iteration": 88, "buffer": 150000, "policy_loss": 3.5234, "value_loss": 0.4898, "selfplay_s": 6.2, "train_s": 41.3}
+{"iteration": 89, "buffer": 150000, "policy_loss": 3.5301, "value_loss": 0.4916, "selfplay_s": 46.7, "train_s": 2.9}
+{"iteration": 90, "buffer": 150000, "policy_loss": 3.5194, "value_loss": 0.4894, "selfplay_s": 58.2, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 59, "draw": 26, "loss": 15}}
+{"iteration": 91, "buffer": 150000, "policy_loss": 3.5174, "value_loss": 0.4894, "selfplay_s": 54.0, "train_s": 2.8}
+{"iteration": 92, "buffer": 150000, "policy_loss": 3.5162, "value_loss": 0.4887, "selfplay_s": 56.0, "train_s": 2.8}
+{"iteration": 93, "buffer": 150000, "policy_loss": 3.5134, "value_loss": 0.4876, "selfplay_s": 58.6, "train_s": 57.8}
+{"iteration": 94, "buffer": 150000, "policy_loss": 3.5126, "value_loss": 0.4881, "selfplay_s": 50.8, "train_s": 2.8}
+{"iteration": 95, "buffer": 150000, "policy_loss": 3.5126, "value_loss": 0.487, "selfplay_s": 45.4, "train_s": 3.3, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 66, "draw": 28, "loss": 6}}
+{"iteration": 96, "buffer": 150000, "policy_loss": 3.508, "value_loss": 0.4874, "selfplay_s": 61.8, "train_s": 2.8}
+{"iteration": 97, "buffer": 150000, "policy_loss": 3.5106, "value_loss": 0.4917, "selfplay_s": 141.2, "train_s": 3.6}
+{"iteration": 98, "buffer": 150000, "policy_loss": 3.5068, "value_loss": 0.4913, "selfplay_s": 51.9, "train_s": 49.2}
+{"iteration": 99, "buffer": 150000, "policy_loss": 3.5057, "value_loss": 0.49, "selfplay_s": 44.8, "train_s": 2.8}
+{"iteration": 100, "buffer": 150000, "policy_loss": 3.5035, "value_loss": 0.4925, "selfplay_s": 62.7, "train_s": 3.6, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 63, "draw": 27, "loss": 10}}
+{"iteration": 101, "buffer": 150000, "policy_loss": 3.5025, "value_loss": 0.4935, "selfplay_s": 46.4, "train_s": 2.8}
+{"iteration": 102, "buffer": 150000, "policy_loss": 3.4972, "value_loss": 0.4901, "selfplay_s": 56.1, "train_s": 2.8}
+{"iteration": 103, "buffer": 150000, "policy_loss": 3.4955, "value_loss": 0.4922, "selfplay_s": 90.0, "train_s": 44.6}
+{"iteration": 104, "buffer": 150000, "policy_loss": 3.4968, "value_loss": 0.494, "selfplay_s": 8.1, "train_s": 42.1}
+{"iteration": 105, "buffer": 150000, "policy_loss": 3.4988, "value_loss": 0.4879, "selfplay_s": 107.6, "train_s": 2.9, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 63, "draw": 26, "loss": 11}}
+{"iteration": 106, "buffer": 150000, "policy_loss": 3.4955, "value_loss": 0.4897, "selfplay_s": 91.1, "train_s": 2.8}
+{"iteration": 107, "buffer": 150000, "policy_loss": 3.4835, "value_loss": 0.4869, "selfplay_s": 56.4, "train_s": 3.5}
+{"iteration": 108, "buffer": 150000, "policy_loss": 3.4883, "value_loss": 0.4874, "selfplay_s": 52.6, "train_s": 44.0}
+{"iteration": 109, "buffer": 150000, "policy_loss": 3.492, "value_loss": 0.4869, "selfplay_s": 153.3, "train_s": 2.8}
+{"iteration": 110, "buffer": 150000, "policy_loss": 3.487, "value_loss": 0.487, "selfplay_s": 52.9, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 61, "draw": 27, "loss": 12}}
+{"iteration": 111, "buffer": 150000, "policy_loss": 3.4782, "value_loss": 0.4843, "selfplay_s": 6.3, "train_s": 53.7}
+{"iteration": 112, "buffer": 150000, "policy_loss": 3.4823, "value_loss": 0.4847, "selfplay_s": 56.2, "train_s": 2.8}
+{"iteration": 113, "buffer": 150000, "policy_loss": 3.4779, "value_loss": 0.4844, "selfplay_s": 45.2, "train_s": 3.7}
+{"iteration": 114, "buffer": 150000, "policy_loss": 3.4787, "value_loss": 0.4807, "selfplay_s": 87.0, "train_s": 51.8}
+{"iteration": 115, "buffer": 150000, "policy_loss": 3.4797, "value_loss": 0.484, "selfplay_s": 51.3, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 69, "draw": 23, "loss": 8}}
+{"iteration": 116, "buffer": 150000, "policy_loss": 3.476, "value_loss": 0.483, "selfplay_s": 6.2, "train_s": 41.7}
+{"iteration": 117, "buffer": 150000, "policy_loss": 3.4753, "value_loss": 0.4798, "selfplay_s": 62.1, "train_s": 3.3}
+{"iteration": 118, "buffer": 150000, "policy_loss": 3.4715, "value_loss": 0.4797, "selfplay_s": 50.9, "train_s": 3.2}
+{"iteration": 119, "buffer": 150000, "policy_loss": 3.4691, "value_loss": 0.4792, "selfplay_s": 60.2, "train_s": 42.7}
+{"iteration": 120, "buffer": 150000, "policy_loss": 3.4689, "value_loss": 0.4805, "selfplay_s": 61.2, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 69, "draw": 23, "loss": 8}}
+{"iteration": 121, "buffer": 150000, "policy_loss": 3.4712, "value_loss": 0.4807, "selfplay_s": 6.4, "train_s": 51.4}
+{"iteration": 122, "buffer": 150000, "policy_loss": 3.4706, "value_loss": 0.4804, "selfplay_s": 53.3, "train_s": 3.0}
+{"iteration": 123, "buffer": 150000, "policy_loss": 3.4735, "value_loss": 0.4837, "selfplay_s": 56.5, "train_s": 3.0}
+{"iteration": 124, "buffer": 150000, "policy_loss": 3.4683, "value_loss": 0.4793, "selfplay_s": 52.1, "train_s": 51.7}
+{"iteration": 125, "buffer": 150000, "policy_loss": 3.4677, "value_loss": 0.4787, "selfplay_s": 54.7, "train_s": 2.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 59, "draw": 28, "loss": 13}}
+{"iteration": 126, "buffer": 150000, "policy_loss": 3.4653, "value_loss": 0.4808, "selfplay_s": 57.5, "train_s": 54.7}
+{"iteration": 127, "buffer": 150000, "policy_loss": 3.4617, "value_loss": 0.4784, "selfplay_s": 56.0, "train_s": 2.7}
+{"iteration": 128, "buffer": 150000, "policy_loss": 3.4586, "value_loss": 0.4755, "selfplay_s": 57.3, "train_s": 2.8}
+{"iteration": 129, "buffer": 150000, "policy_loss": 3.4572, "value_loss": 0.4747, "selfplay_s": 63.0, "train_s": 42.9}
+{"iteration": 130, "buffer": 150000, "policy_loss": 3.455, "value_loss": 0.4754, "selfplay_s": 61.1, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 68, "draw": 21, "loss": 11}}
+{"iteration": 131, "buffer": 150000, "policy_loss": 3.4533, "value_loss": 0.4753, "selfplay_s": 23.5, "train_s": 3.0}
+{"iteration": 132, "buffer": 150000, "policy_loss": 3.4519, "value_loss": 0.4722, "selfplay_s": 5.4, "train_s": 3.8}
+{"iteration": 133, "buffer": 150000, "policy_loss": 3.4572, "value_loss": 0.4733, "selfplay_s": 6.0, "train_s": 3.0}
+{"iteration": 134, "buffer": 150000, "policy_loss": 3.4568, "value_loss": 0.4752, "selfplay_s": 5.3, "train_s": 2.7}
+{"iteration": 135, "buffer": 150000, "policy_loss": 3.4533, "value_loss": 0.477, "selfplay_s": 5.1, "train_s": 2.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 66, "draw": 29, "loss": 5}}
+{"iteration": 136, "buffer": 150000, "policy_loss": 3.449, "value_loss": 0.4736, "selfplay_s": 5.1, "train_s": 2.7}
+{"iteration": 137, "buffer": 150000, "policy_loss": 3.4532, "value_loss": 0.4717, "selfplay_s": 5.3, "train_s": 2.8}
+{"iteration": 138, "buffer": 150000, "policy_loss": 3.4477, "value_loss": 0.4718, "selfplay_s": 5.2, "train_s": 2.7}
+{"iteration": 139, "buffer": 150000, "policy_loss": 3.4523, "value_loss": 0.4716, "selfplay_s": 5.5, "train_s": 2.8}
+{"iteration": 140, "buffer": 150000, "policy_loss": 3.4564, "value_loss": 0.4725, "selfplay_s": 5.3, "train_s": 2.7, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 60, "draw": 30, "loss": 10}}
+{"iteration": 141, "buffer": 150000, "policy_loss": 3.4489, "value_loss": 0.4697, "selfplay_s": 5.1, "train_s": 2.7}
+{"iteration": 142, "buffer": 150000, "policy_loss": 3.4529, "value_loss": 0.4712, "selfplay_s": 5.2, "train_s": 2.7}
+{"iteration": 143, "buffer": 150000, "policy_loss": 3.4468, "value_loss": 0.4691, "selfplay_s": 5.5, "train_s": 2.8}
+{"iteration": 144, "buffer": 150000, "policy_loss": 3.448, "value_loss": 0.4698, "selfplay_s": 5.3, "train_s": 2.8}
+{"iteration": 145, "buffer": 150000, "policy_loss": 3.4393, "value_loss": 0.4668, "selfplay_s": 5.3, "train_s": 2.8, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 60, "draw": 29, "loss": 11}}
+{"iteration": 146, "buffer": 150000, "policy_loss": 3.4379, "value_loss": 0.4703, "selfplay_s": 5.6, "train_s": 2.8}
+{"iteration": 147, "buffer": 150000, "policy_loss": 3.4434, "value_loss": 0.4678, "selfplay_s": 5.3, "train_s": 2.8}
+{"iteration": 148, "buffer": 150000, "policy_loss": 3.4396, "value_loss": 0.4686, "selfplay_s": 5.4, "train_s": 3.1}
+{"iteration": 149, "buffer": 150000, "policy_loss": 3.4337, "value_loss": 0.4661, "selfplay_s": 6.6, "train_s": 3.6}
+{"iteration": 150, "buffer": 150000, "policy_loss": 3.4357, "value_loss": 0.4646, "selfplay_s": 6.5, "train_s": 3.1, "vs_random": {"win": 50, "draw": 0, "loss": 0}, "vs_heuristic": {"win": 66, "draw": 28, "loss": 6}}

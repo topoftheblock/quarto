@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quarto, Reece Mews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600&display=swap">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Shared paint for the pieces and the lettering on the wall -->
+  <svg class="defs" aria-hidden="true">
+    <defs>
+      <linearGradient id="body-light" x1="0" x2="1">
+        <stop offset="0" stop-color="#b9786a"/><stop offset=".45" stop-color="#f4d3bf"/><stop offset="1" stop-color="#d4968a"/>
+      </linearGradient>
+      <linearGradient id="body-dark" x1="0" x2="1">
+        <stop offset="0" stop-color="#1d1838"/><stop offset=".45" stop-color="#5a4a92"/><stop offset="1" stop-color="#2a2150"/>
+      </linearGradient>
+      <pattern id="streaks" width="7" height="100" patternUnits="userSpaceOnUse">
+        <rect x="1" width="1.4" height="100" fill="#fff" opacity=".14"/>
+        <rect x="4.2" width=".8" height="100" fill="#000" opacity=".18"/>
+      </pattern>
+      <filter id="smear" x="-15%" y="-15%" width="130%" height="130%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.09" numOctaves="2" seed="7"/>
+        <feDisplacementMap in="SourceGraphic" scale="6" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="wet-paint" x="-5%" y="-20%" width="110%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.04 0.25" numOctaves="2" seed="3"/>
+        <feDisplacementMap in="SourceGraphic" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="studio" id="studio">
+    <div class="scene" id="scene" aria-hidden="true"></div>
+
+    <div class="easel-canvas" id="canvas">
+      <div class="swaths" id="swaths" aria-hidden="true"></div>
+      <div class="board" id="board" aria-label="Board"></div>
+    </div>
+
+    <div class="hand" id="hand" aria-label="Piece in hand"></div>
+    <div class="shelf" id="pieces" aria-label="Remaining pieces"></div>
+    <p class="status" id="status" aria-live="polite"></p>
+
+    <nav class="controls" id="controls">
+      <span id="level">
+        <button data-level="easy">Easy</button>
+        <button data-level="normal">Normal</button>
+        <button data-level="strong">Strong</button>
+      </span>
+      <span id="first">
+        <button data-first="human">You first</button>
+        <button data-first="computer">Machine first</button>
+      </span>
+      <button id="new-game">New game</button>
+    </nav>
+
+    <div class="darkness" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+
+  <script src="/scene.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

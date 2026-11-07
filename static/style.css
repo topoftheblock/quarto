@@ -1,0 +1,239 @@
+:root {
+  --bone: #efe6d6;
+  --muted: rgba(239, 230, 214, .5);
+  --flesh: #e7b29b;
+  --glow: #fff1e4;
+  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #050404;
+  color: var(--bone);
+  font-family: var(--serif);
+}
+
+.defs { position: absolute; width: 0; height: 0; }
+
+button { font: inherit; color: inherit; }
+
+/* The room is a fixed-proportion stage scaled to the window; app.js positions
+   the interactive pieces of furniture in the same coordinates as the scene. */
+
+.studio {
+  --w: 1600;
+  --h: 1000;
+  position: relative;
+  width: min(100vw, calc(100vh * var(--w) / var(--h)));
+  aspect-ratio: var(--w) / var(--h);
+  container-type: inline-size;
+  overflow: hidden;
+}
+
+.scene, .scene svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.scene svg { animation: develop 1.6s ease-out; }
+@keyframes develop { from { opacity: 0; filter: blur(10px) brightness(.4); } }
+
+.easel-canvas, .hand, .shelf, .status { position: absolute; }
+
+/* The canvas on the easel: raw linen edge, black ground, the board painted in */
+
+.easel-canvas {
+  border: .45cqw solid #bcae92;
+  background:
+    repeating-linear-gradient(97deg, rgba(255, 255, 255, .02) 0 1px, transparent 1px 6px),
+    radial-gradient(ellipse at 50% 35%, #15121a, #08070a 75%);
+  box-shadow: 1.2cqw 1.6cqw 2.4cqw rgba(0, 0, 0, .7);
+  overflow: hidden;
+}
+
+.swaths, .swaths svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.swaths svg { animation: develop 1.2s ease-out; }
+
+.board {
+  position: absolute;
+  inset: 7%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 3.5%;
+  padding: 4%;
+  background: rgba(8, 7, 10, .5);
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  background: radial-gradient(circle at 50% 62%, #030204 42%, #1c1820 100%);
+  border: 1.5px solid rgba(239, 230, 214, .28);
+  border-radius: 50%;
+}
+
+.cell:not(:disabled) { cursor: pointer; }
+.cell:not(:disabled):hover { border-color: var(--bone); }
+.cell .ghost { opacity: 0; transition: opacity .15s; }
+.cell:not(:disabled):hover .ghost { opacity: .5; }
+.cell.last { border-color: var(--flesh); }
+.cell.win {
+  border: 2.5px solid var(--glow);
+  box-shadow: 0 0 22px rgba(255, 210, 190, .8);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+@keyframes pulse { 50% { box-shadow: 0 0 6px rgba(255, 210, 190, .4); } }
+
+/* Pieces */
+
+.piece { display: block; width: 100%; height: 100%; overflow: visible; }
+.cell .piece { width: 118%; height: 118%; margin-top: -12%; }
+.piece.fresh { animation: arrive .7s cubic-bezier(.2, .8, .3, 1); }
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(-30%) scaleY(1.25) skewX(-8deg); filter: blur(6px); }
+  60% { opacity: 1; filter: blur(1px); }
+  to { transform: none; filter: none; }
+}
+
+/* The piece you hold waits on the stool; the rest stand on the shelf */
+
+.hand { display: flex; align-items: flex-end; }
+
+.shelf { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); }
+
+.slot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 6% 2%;
+  background: none;
+  border: none;
+}
+
+.slot .piece { height: 92%; width: auto; }
+button.slot:not(:disabled) { cursor: pointer; }
+button.slot:not(:disabled):hover .piece { filter: drop-shadow(0 0 .6cqw rgba(255, 236, 205, .55)); transform: translateY(-4%); }
+button.slot .piece { transition: transform .15s; }
+button.slot:disabled { cursor: default; }
+
+/* Lettering painted on the wall */
+
+.status {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.6cqw;
+  line-height: 1.05;
+  color: var(--bone);
+  transform: rotate(-2.5deg);
+  filter: url(#wet-paint);
+  text-shadow: .1cqw .15cqw 0 rgba(0, 0, 0, .45);
+}
+
+.status.loud { font-size: 4.4cqw; color: #f4dccb; }
+
+/* Controls: scrawled small at the foot of the room */
+
+.controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2.4% 0 1.2%;
+  background: linear-gradient(transparent, rgba(3, 2, 2, .85) 45%);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .4cqw 2.4cqw;
+  z-index: 3;
+}
+
+.controls button {
+  padding: .2cqw .4cqw;
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  font-size: max(11px, .82cqw);
+  font-weight: 600;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+}
+.controls button:hover, .controls button.on { color: var(--bone); }
+.controls button.on { border-bottom-color: var(--bone); }
+
+/* One bare bulb: darkness gathers away from it and the light keeps failing */
+
+.darkness {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    radial-gradient(circle at var(--bx) var(--by), rgba(255, 214, 150, .10) 0, transparent 20%, rgba(6, 4, 3, .5) 52%, rgba(2, 1, 1, .93) 100%),
+    linear-gradient(rgba(70, 62, 28, .16), rgba(70, 62, 28, .16));
+  animation: flicker 7s infinite steps(1);
+}
+
+.studio.thinking .darkness { animation: flicker-hard .9s infinite steps(1); }
+
+@keyframes flicker {
+  0%, 100% { filter: none; }
+  41% { filter: brightness(.6); }
+  42% { filter: none; }
+  43% { filter: brightness(.5); }
+  44% { filter: none; }
+  77% { filter: brightness(.75); }
+  78% { filter: none; }
+}
+
+@keyframes flicker-hard {
+  0% { filter: none; }
+  20% { filter: brightness(.45); }
+  27% { filter: none; }
+  55% { filter: brightness(.6); }
+  60% { filter: none; }
+  83% { filter: brightness(.35); }
+  86% { filter: none; }
+}
+
+.grain {
+  position: absolute;
+  inset: -50%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: .16;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='220' height='220' filter='url(%23n)'/></svg>");
+  animation: grain .5s steps(4) infinite;
+}
+
+@keyframes grain {
+  25% { transform: translate(-3%, 2%); }
+  50% { transform: translate(2%, -3%); }
+  75% { transform: translate(-1%, 3%); }
+}
+
+.studio.tall .status { font-size: 5.4cqw; }
+.studio.tall .status.loud { font-size: 8cqw; }
+.studio.tall .controls { top: 0; bottom: auto; padding: 1.2% 0 2.4%; background: linear-gradient(rgba(3, 2, 2, .85) 55%, transparent); }
+.studio.tall .controls button { font-size: max(11px, 2.3cqw); }
+
+:focus-visible { outline: 2px solid var(--glow); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
