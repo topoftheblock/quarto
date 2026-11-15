@@ -35,6 +35,10 @@ Then open <http://127.0.0.1:8765>.
 On a portrait screen the room rearranges itself vertically. The generated scene lives in
 `static/scene.js`.
 
+Every finished game is appended to `games/log.jsonl`. Each entry records every pick and placement, the
+final board, the winner, the winning line and the traits its four pieces share. The file is
+not committed.
+
 If `checkpoints/latest.pt` is missing or PyTorch isn't installed, the server falls back to
 the simple rule-based player in `computer.py`.
 

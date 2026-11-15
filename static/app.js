@@ -93,14 +93,14 @@ function pieceSVG(id, extra = "") {
       <rect x="20" y="${top}" width="44" height="${base - top}" fill="${c.body}"/>
       <rect x="20" y="${top}" width="44" height="${base - top}" fill="url(#streaks)"/>
       <polygon points="20,${top} 64,${top} 78,${top - d} 34,${top - d}" fill="${c.lid}" stroke="${c.rim}" stroke-width=".8"/>
-      ${t.hollow ? `<ellipse cx="49" cy="${top - d / 2}" rx="11" ry="3" fill="${c.hole}"/>` : ""}`;
+      ${t.hollow ? `<ellipse cx="49" cy="${top - d / 2}" rx="16" ry="4.2" fill="${c.hole}" stroke="${c.rim}" stroke-width=".6"/>` : ""}`;
   } else {
     const body = `M22 ${top} V${base} A28 8 0 0 0 78 ${base} V${top} Z`;
     shape = `
       <path d="${body}" fill="${c.body}"/>
       <path d="${body}" fill="url(#streaks)"/>
       <ellipse cx="50" cy="${top}" rx="28" ry="8" fill="${c.lid}" stroke="${c.rim}" stroke-width=".8"/>
-      ${t.hollow ? `<ellipse cx="50" cy="${top}" rx="15" ry="4.3" fill="${c.hole}"/>` : ""}`;
+      ${t.hollow ? `<ellipse cx="50" cy="${top}" rx="20" ry="5.6" fill="${c.hole}" stroke="${c.rim}" stroke-width=".6"/>` : ""}`;
   }
   return `<svg class="piece ${extra}" viewBox="0 0 100 100" role="img" aria-label="${describe(id)}">
     <ellipse cx="50" cy="${base + 3}" rx="34" ry="6" fill="#000" opacity=".45"/>

@@ -1,4 +1,5 @@
 import json
+import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 
@@ -8,8 +9,22 @@ from game import ALL_PIECES, COMPUTER, HUMAN, Game
 ROOT = Path(__file__).parent
 STATIC = ROOT / "static"
 CHECKPOINT = ROOT / "checkpoints" / "latest.pt"
+GAME_LOG = ROOT / "games" / "log.jsonl"
+TRAITS = (("short", "tall"), ("light", "dark"), ("round", "square"), ("solid", "hollow"))
 CONTENT_TYPES = {".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript"}
 LEVELS = {"easy": 25, "normal": 200, "strong": 800}
+
+
+def describe(piece):
+    return ", ".join(names[value] for names, value in zip(TRAITS, piece.traits))
+
+
+def shared_traits(pieces):
+    """Trait values common to all the given pieces, e.g. ["dark", "hollow"]."""
+    return [
+        names[pieces[0].traits[k]] for k, names in enumerate(TRAITS)
+        if len({p.traits[k] for p in pieces}) == 1
+    ]
 
 
 class QuartoServer(HTTPServer):
@@ -29,6 +44,8 @@ class QuartoServer(HTTPServer):
 
     def new_game(self, first, level):
         self.game = Game(first)
+        self.first = first
+        self.logged = False
         self.level = level if level in LEVELS else "normal"
         self.ai_move = None
         self.computer.last_value = None
@@ -43,6 +60,31 @@ class QuartoServer(HTTPServer):
         self.computer.play(game)
         given = ALL_PIECES.index(game.selected) if game.selected else None
         self.ai_move = {"cell": game.last_cell, "piece": given}
+
+    def log_finished_game(self):
+        """Append a finished game to games/log.jsonl so it can be replayed later."""
+        game = self.game
+        if not game.over or self.logged:
+            return
+        self.logged = True
+        line = game.board.winning_line()
+        entry = {
+            "time": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "level": self.level,
+            "first": self.first,
+            "winner": game.winner,
+            "winning_line": list(line) if line else None,
+            "shared_traits": shared_traits([game.board.cells[i] for i in line]) if line else None,
+            "moves": [
+                {"action": action, "player": player, "piece": ALL_PIECES.index(piece),
+                 "traits": describe(piece), **({"cell": cell} if action == "place" else {})}
+                for action, player, piece, cell in game.moves
+            ],
+            "board": [None if p is None else describe(p) for p in game.board.cells],
+        }
+        GAME_LOG.parent.mkdir(exist_ok=True)
+        with GAME_LOG.open("a") as f:
+            f.write(json.dumps(entry) + "\n")
 
     def state(self):
         game = self.game
@@ -107,6 +149,7 @@ class QuartoHandler(BaseHTTPRequestHandler):
                 return self.send_error(404)
         except (KeyError, IndexError, TypeError, ValueError):
             return self._json({"error": "invalid move", **server.state()}, status=409)
+        server.log_finished_game()
         self._json(server.state())
 
     def _json(self, data, status=200):

@@ -62,6 +62,7 @@ class Game:
         self.turn = first  # whoever picks the opening piece
         self.winner = None
         self.last_cell = None
+        self.moves = []  # ("pick" | "place", player, piece, cell or None), in order
 
     @property
     def over(self):
@@ -73,6 +74,7 @@ class Game:
         self.board = self.board.with_piece(cell, self.selected)
         self.selected = None
         self.last_cell = cell
+        self.moves.append(("place", self.turn, self.board.cells[cell], cell))
         if self.board.winning_line():
             self.winner = self.turn
         elif self.board.is_full():
@@ -83,4 +85,5 @@ class Game:
             raise ValueError("invalid pick")
         self.available.remove(piece)
         self.selected = piece
+        self.moves.append(("pick", self.turn, piece, None))
         self.turn = COMPUTER if self.turn == HUMAN else HUMAN
